@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 // @ts-ignore
 import Typewriter from 't-writer.js'
+// @ts-ignore
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ export class AppComponent implements OnInit {
   title = 'Portfolio';
 
   ngOnInit() {
+    AOS.init();
+
     let target = document.querySelector("#writer")
     const writer = new Typewriter(target, {
       loop: true,
