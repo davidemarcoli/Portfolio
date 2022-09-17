@@ -2,6 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-html {
-  background-color: black !important;
+html, body {
+  background-color: #121212 !important;
 }
