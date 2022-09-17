@@ -1,1 +1,37 @@
-<p>projects works!</p>
+<h1>My Projects</h1>
+<br>
+<div class="container">
+  <div id="project-container">
+    <div class="card" style="width: 20rem; background-color: rgba(35,35,35,0.7)">
+      <img class="card-img-top" src="https://via.placeholder.com/400" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Portfolio</h5>
+        <app-badge type="danger">Angular</app-badge>
+        <p class="card-text">A personal Portfolio on which you can learn more about me and my projects.</p>
+        <a class="btn btn-secondary" href="https://github.com/davidemarcoli/Portfolio">Github</a>
+        <a class="btn btn-secondary" href="{{getCurrentUrl()}}">Website</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem; background-color: rgba(35,35,35,0.7)">
+      <img class="card-img-top" src="https://via.placeholder.com/400" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Doodleverse</h5>
+        <app-badge type="success">Spring Boot</app-badge>
+        <app-badge type="secondary">Vaadin</app-badge>
+        <p class="card-text">A city manager where you can build houses and manage companies/persons.</p>
+        <a class="btn btn-secondary" href="https://github.com/davidemarcoli/DoodleVerse">Github</a>
+        <a class="btn btn-secondary" href="{{getCurrentUrl()}}">Website</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem; background-color: rgba(35,35,35,0.7)">
+      <img class="card-img-top" src="https://via.placeholder.com/400" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Grademanager Mobile</h5>
+        <app-badge type="success">Spring Boot</app-badge>
+        <app-badge type="info">React Native</app-badge>
+        <p class="card-text">A mobile App for storing your grades. You can log in with your Google Account and have an overview about your achieved grades.</p>
+        <a class="btn btn-secondary" href="https://github.com/davidemarcoli/GradeManager-Mobile">Github</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+}
+
+app-badge:not(:last-child) {
+  margin-right: 10px !important;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px !important;
+}
+
+p.card-text {
+  margin-top: 10px;
+}
+
+.card {
+  margin: 4%;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*gap: 10px 20px;*/
+  justify-content: center;
+  width: 100%;
+}
+
+@media all and (max-width: 992px) {
+  .card {
+    width: 100% !important;
+  }
+}

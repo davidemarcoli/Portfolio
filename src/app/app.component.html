@@ -1,13 +1,11 @@
-<div id="home" style="height: 100vh">
-  <h1 id="writer"></h1>
-  <div class="page-scroll text-center">
-    <a href="#about-me" class="btn btn-circle">
-      <i class="fa fa-angle-down fa-2x animated"></i>
-    </a>
-  </div>
+<div id="home" class="centered full-height" data-aos="fade-in" data-aos-duration="3000" data-aos-once="true">
+  <app-home></app-home>
 </div>
 
-<div style="height: 100vh" id="about-me">
-  <app-about-me data-aos="zoom-in" data-aos-duration="2000"></app-about-me>
+<div class="centered full-height" id="about-me" data-aos="zoom-in" data-aos-duration="2000">
+  <app-about-me></app-about-me>
 </div>
 
+<div class="full-height" id="projects">
+  <app-projects></app-projects>
+</div>

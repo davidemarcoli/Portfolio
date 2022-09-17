@@ -2,6 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-html, body {
+body {
   background-color: #121212 !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #121212;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
 }

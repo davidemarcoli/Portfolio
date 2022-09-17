@@ -12,4 +12,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getCurrentUrl(): string {
+    return location.origin;
+  }
 }
