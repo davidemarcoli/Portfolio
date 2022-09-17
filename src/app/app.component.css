@@ -9,15 +9,12 @@
 }
 
 .full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-#about-me {
-  padding-top: 10vh;
-}
-
-#projects {
-  padding-top: 10vh;
+.spacing-top {
+  /*scroll-margin-top: 150px;*/
+  margin-top: 10%;
 }
 
 * {
