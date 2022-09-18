@@ -15,4 +15,10 @@ export class ProjectsComponent implements OnInit {
   getCurrentUrl(): string {
     return location.origin;
   }
+
+  getRandomDuration(): number {
+    const min = 0.5;
+    const max = 2;
+    return Math.random() * (max - min) + min;
+  }
 }

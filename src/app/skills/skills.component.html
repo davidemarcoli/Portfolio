@@ -1,0 +1,27 @@
+<h1>My Skills</h1>
+<br>
+<div class="container">
+  <div id="skill-container">
+<!--    <div class="card" style="width: 20rem; background-color: rgba(35,35,35,0.7)">-->
+<!--      <img class="card-img-top" src="assets/projects/Portfolio.png" alt="Portfolio Image">-->
+<!--      <div class="card-body">-->
+<!--        <h5 class="card-title">Portfolio</h5>-->
+<!--        <app-badge type="danger">Angular</app-badge>-->
+<!--        <p class="card-text">A personal Portfolio on which you can learn more about me and my projects.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div *ngFor="let skill of learnedSkills">-->
+<!--      <a class="skill-link" href="{{skill.link}}">-->
+<!--        <div class="skill" [ngClass]="skill.darkTextColor ? 'skillDarkText':''" style="background-color: {{skill.backgroundColor}};">{{skill.name}}</div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+    <div *ngFor="let skill of learnedSkills" class="skill" data-aos="zoom-in-up" data-aos-duration="1000">
+      <a class="skill-link" href="{{skill.link}}" target="_blank">
+<!--        <div class="skill" [ngClass]="skill.darkTextColor ? 'skillDarkText':''" style="background-color: {{skill.backgroundColor}};">{{skill.name}}</div>-->
+        <img src="{{skill.imageUrl}}" class="skill-image" height="100px" alt="Image of {{skill.name}} Logo">
+      </a>
+    </div>
+  </div>
+</div>

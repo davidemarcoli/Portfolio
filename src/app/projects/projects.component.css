@@ -1,11 +1,3 @@
-h1 {
-  text-align: center;
-}
-
-app-badge:not(:last-child) {
-  margin-right: 10px !important;
-}
-
 .btn:not(:last-child) {
   margin-right: 10px !important;
 }

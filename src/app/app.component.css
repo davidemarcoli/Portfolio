@@ -14,13 +14,11 @@
 
 .spacing-top {
   /*scroll-margin-top: 150px;*/
-  margin-top: 10%;
+  /*margin-top: 10%;*/
+  /*padding-top: 10%;*/
+  padding: 5% 0;
 }
 
 * {
   color: white;
-}
-
-h1 {
-  text-align: center;
 }

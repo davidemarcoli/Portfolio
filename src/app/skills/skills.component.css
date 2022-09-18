@@ -1,0 +1,55 @@
+#skill-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 40px;
+  align-items: center;
+
+}
+
+/*.skill {*/
+/*  margin: 2%;*/
+/*  width: 20%;*/
+/*}*/
+
+/*A skill badge to show my learned programming languages*/
+.skill {
+  flex: 0 0 26%;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  transition: 0.5s ease;
+  font-size: 2em;
+  width: fit-content
+}
+
+@media screen and (max-width: 996px) {
+  .skill {
+    flex: 0 0 40%;
+  }
+}
+
+.skill img {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.skill {
+  color: white;
+}
+
+.skill-link {
+  text-decoration: none;
+}
+
+.skillDarkText {
+  color: #121212;
+}
+
+.skill:hover {
+  scale: 1.1;
+}
