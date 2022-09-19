@@ -39,6 +39,16 @@
   transition: 0.5s;
 }
 
+@media all and (max-width: 576px) {
+  #link-button-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .link-button {
+    margin: 0.5em;
+  }
+}
+
 .page-scroll {
   position: absolute;
   bottom: 30px;
