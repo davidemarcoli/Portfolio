@@ -10,6 +10,9 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {LazyLoadImagesDirective} from "./directives/LazyLoadImagesDirective";
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {CacheInterceptor} from "./interceptors/CacheInterceptor";
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { environment } from '../environments/environment';
     ProjectsComponent,
     HomeComponent,
     BadgeComponent,
-    SkillsComponent
+    SkillsComponent,
+    LazyLoadImagesDirective
   ],
   imports: [
     BrowserModule,
@@ -28,9 +32,11 @@ import { environment } from '../environments/environment';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerImmediately'
-    })
+    }),
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
