@@ -4,7 +4,7 @@
   "description": "A Portfolio of my Career made with Angular",
   "theme_color": "#ffffff",
   "background_color": "#000000",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "./",
   "start_url": "./",
   "lang": "en",
