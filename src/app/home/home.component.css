@@ -7,6 +7,10 @@
   font-size: 3em;
 }
 
+#arrow-down {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
 #link-button-container {
   display: flex;
   /*On top of page*/
