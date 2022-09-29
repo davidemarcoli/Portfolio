@@ -2,6 +2,10 @@
   margin-right: 10px !important;
 }
 
+app-badge {
+  margin-right: 10px;
+}
+
 p.card-text {
   margin-top: 10px;
 }

@@ -12,7 +12,7 @@
   /*On top of page*/
   position: absolute;
   top: 2em;
-  /*Centered*/
+  /*!*Centered*!*/
   left: 50%;
   transform: translate(-50%, 0);
   /*Margin*/
@@ -37,6 +37,22 @@
   background-color: #121212;
   /*Transition*/
   transition: 0.5s;
+}
+
+@media all and (max-width: 600px) {
+  #writer {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #link-button-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .link-button {
+    margin: 0;
+  }
 }
 
 .page-scroll {
@@ -116,14 +132,16 @@
   height: 90px;
   border-radius: 60px;
   font-size: 40px;
+  border: 0 !important;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: background .4s ease-in-out;
   -moz-transition: background .4s ease-in-out;
-  transition: background .4s ease-in-out;
+  transition: background, scale .4s ease-in-out;
 }
 
 .btn-circle:hover, .btn-circle:focus {
-  outline: 0;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  /*outline: 0;*/
+  /*color: #fff;*/
+  /*background: rgba(255, 255, 255, 0.1);*/
+  scale: 1.2;
 }
