@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, Meta, Title} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +35,8 @@ import {CacheInterceptor} from "./interceptors/CacheInterceptor";
     }),
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true},
+    Meta, Title
   ],
   bootstrap: [AppComponent]
 })
