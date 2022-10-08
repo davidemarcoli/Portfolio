@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit, PLATFORM_ID} from '@angular/core';
 // @ts-ignore
 import Typewriter from 'typewriter-effect/dist/core';
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,13 @@ import Typewriter from 'typewriter-effect/dist/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     let target = document.querySelector("#writer")
 
     const typewriter = new Typewriter(target, {

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "./purgecss.sh",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run Portfolio:serve-ssr",
@@ -28,6 +28,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.1",
     "express": "^4.15.2",
+    "ngx-unused-css": "^4.0.0-1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "typewriter-effect": "^2.19.0",

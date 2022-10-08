@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit, PLATFORM_ID} from '@angular/core';
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'app-projects',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
   }
 
   getCurrentUrl(): string {
-    return location.origin;
+    if (isPlatformBrowser(this.platformId)) {
+      return location.origin;
+    } else {
+      return 'https://davidemarcoli.de';
+    }
   }
 
   getRandomDuration(): number {

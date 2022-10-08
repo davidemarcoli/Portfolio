@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit, PLATFORM_ID} from '@angular/core';
 // @ts-ignore
 import AOS from "aos";
 import {Meta, Title} from "@angular/platform-browser";
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import {Meta, Title} from "@angular/platform-browser";
 export class AppComponent implements OnInit {
   title = 'Portfolio';
 
-  constructor(private metaService: Meta, private titleService: Title) {
+  constructor(private metaService: Meta, private titleService: Title, @Inject(PLATFORM_ID) private platformId: Object) {
     this.titleService.setTitle('Davide Marcoli\'s Portfolio');
     this.metaService.addTags([
       {name: 'author', content: 'Davide Marcoli'},
@@ -24,6 +25,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     AOS.init();
   }
 }
