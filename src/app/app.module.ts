@@ -25,7 +25,7 @@ import {CacheInterceptor} from "./interceptors/CacheInterceptor";
     LazyLoadImagesDirective
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
