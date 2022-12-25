@@ -5,8 +5,8 @@
   "theme_color": "#ffffff",
   "background_color": "#000000",
   "display": "fullscreen",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "/",
+  "start_url": "/",
   "lang": "en",
   "shortcuts": [
     {
@@ -196,10 +196,10 @@
   ],
   "categories": [
     "portfolio",
-    "personal",
-    "resume",
-    "cv",
-    "developer"
+    "developer",
+    "development",
+    "student",
+    "education"
   ],
   "icons": [
     {
